@@ -1,0 +1,99 @@
+html{
+    background-color: rgb(143, 126, 255);
+}
+
+header{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-shadow: 5px 1px yellow;
+    text-align: center;
+    border: solid 3px yellow;
+    box-shadow: 5px 5px 50px rgb(255, 87, 87);
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+header img{
+    width: 200px;
+    margin-top: -0.7cm;
+    
+}
+
+h2{
+    width: fit-content;
+
+}
+
+#dispa:hover{
+    background-color: rgb(143, 126, 255);
+}
+
+
+h2:hover{
+    background-color: yellow;
+    width: fit-content;
+}
+
+#paragraphe:hover{
+    background-color: yellow;
+    border:3px solid #000000;
+    color:#000000;
+}
+
+.black{
+    color:#000000;
+}
+
+.itacouleur{
+    color: brown;
+    font-style: italic;
+}
+
+#paragraphe{
+    margin: center;
+    color:rgb(143, 126, 255);
+    background-color: rgb(143, 126, 255);
+    width: fit-content;
+    padding-right: 35px;
+    border-radius: 15px;
+    
+}
+
+
+
+.test{
+    display: inline;
+}
+
+
+table{
+    border: red solid 2px;
+    border-collapse: collapse;
+    background-color: white;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
+
+th{
+    border: solid black 1px;
+    border-collapse: collapse;
+    padding: 10px;
+    
+    
+ 
+   
+}
+
+td{
+    border: solid black 1px;
+    border-collapse: collapse;
+    padding: 10px;
+
+}
+
+
+.EPD{
+    background-color: yellow;
+}
