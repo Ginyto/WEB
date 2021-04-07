@@ -1,10 +1,11 @@
 html{
-    background-color: mediumslateblue;
+    background-color: rgb(192, 189, 189);
 }
 
 #boximage{
     display: flex;
     justify-content: center;
+    margin-top: 3%;
 
 }
 
@@ -13,5 +14,10 @@ img{
     border-radius: 50%;
     box-shadow: 0px 0px 50px #951D1D;
 
+}
 
+
+#saisie{
+    background-color: #951D1D;
+    box-sizing: border-box;
 }
