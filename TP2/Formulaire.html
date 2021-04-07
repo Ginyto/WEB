@@ -14,27 +14,27 @@
     <header>
         <center>
 
-            <h1>Coordonées</h1>
+            <h2><b>Coordonées</b></h2>
 
             <form action="/formulaire" method="post">
                 
                 <div>
-                        <label for="Nom">Nom <br> </label>
+                        <label for="Nom"> <b>Nom</b> <br> </label>
                         <input type="text" placeholder="Entrez votre nom">
                 </div>
-
+                <br>
                 <div>
-                        <label for="prénom">Prénom <br> </label>
+                        <label for="prénom"> <b>Prénom</b> <br> </label>
                         <input type="text" placeholder="Entrez votre prénom">
                 </div>
-
+                <br>
                 <div>
-                        <label for="adresse">Adresse <br> </label>
+                        <label for="adresse"> <b>Adresse</b> <br> </label>
                         <input type="text" placeholder="Entrez votre adresse">
                 </div>
-
+                <br>
                 <div>
-                    <label for="mail">e-mail <br> </label>
+                    <label for="mail"> <b>e-mail</b> <br> </label>
                     <input type="email" id="mail" name="user_mail" placeholder="Entrez votre mail">
                 </div>
 
@@ -42,13 +42,14 @@
 
                 <FORM>
                     <nobr>
-                        <label for="choix1">Je souhaite recevoir de la documentation</label>
+                        <label for="choix1"> <b>Je souhaite recevoir de la documentation</b> </label>
                         <input type="checkbox" name="choix1" value="1"> 
                     </nobr>
                 </FORM>
 
                 <br>
-
+                
+                <label for="pays"> <b>Pays</b> </label>
                 <select name="pays">
 
                     <option value="France" selected="selected">France </option>
@@ -283,58 +284,64 @@
 
                     </select>
             </form>
-            
-                <p>Sexe</p>
 
-                    <div>
+            <br>
+            <br>
+            
+                <span> <b>Sexe</b> </span>
+
+                    <span>
                         <input type="radio" name="sexe" id="Femme" value="Femme">
                         <label for="Femme">Femme</label>
-                    </div>
-
-                    <div>
+                    </span>
+            
+                    <span>
                         <input type="radio" name="sexe" id="Homme" value="Homme">
                         <label for="Homme">Homme</label>
-                    </div>
+                    </span>
             
-                <p>Domaine(s) d'activité:</p>
+                <h2> <b>Domaine(s) d'activité</b> </h2>
+                <p>Choix multiples : </p>
 
-                    <div>
+                    <span>
                         <input type="checkbox" id="Mécanique" name="Mécanique"
                             checked>
                         <label for="Mécanique">Mécanique</label>
-                    </div>
+                    </span>
         
-                    <div>
+                    <span>
                         <input type="checkbox" id="Electronique" name="Electronique">
                         <label for="Electronique">Electronique</label>
-                    </div>
+                    </span>
         
-                    <div>
+                    <span>
                         <input type="checkbox" id="Informatique" name="Informatique">
                         <label for="Informatique">Informatique</label>
-                    </div>
+                    </span>
         
-                    <div>
+                    <span>
                         <input type="checkbox" id="Autre" name="Autre">
                         <label for="Autre">Autre</label>
-                    </div>
-                
+                    </span>
 
-                    <div class="button">
+                    <p></p>
+
+                    <span class="button">
                         <button type="submit">Ajouter</button>
-                    </div>
+                    </span>
         
-                    <div class="button">
+                    <span class="button">
                         <button type="submit">Supprimer</button>
-                    </div>
+                    </span>
+
+                    <p></p>
 
                     <div>
-                        <label for="pass">Mot de passe (8 caractères minimum):</label>
-                        <input type="password" id="pass" name="password"
+                        <label for="pass"> <b>Mot de passe (8 caractères minimum)</b></label>
+                        <input type="password" id="pass" name="password" placeholder="Entrez votre mot de passe"
                             minlength="8" required>
                     </div>
-                    
-
+                
         </center>
     </header>
 </body>
