@@ -18,6 +18,14 @@ img{
 
 
 #saisie{
-    background-color: #951D1D;
+    background-color: white;
     box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 2px 2px 2px;
+    text-align: center;
+    margin-top: 3%;
+}
+
+#bouton{
+    margin-right: auto;
 }
