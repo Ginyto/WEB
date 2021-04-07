@@ -1,0 +1,17 @@
+html{
+    background-color: mediumslateblue;
+}
+
+#boximage{
+    display: flex;
+    justify-content: center;
+
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #951D1D;
+
+
+}
