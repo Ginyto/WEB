@@ -1,5 +1,7 @@
 html{
     background-color: rgb(192, 189, 189);
+    
+    
 }
 
 #boximage{
@@ -19,37 +21,45 @@ img{
 
 #saisie{
     background-color: white;
-    width: 1000px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
     box-shadow: 2px 2px 2px;
     margin-top: 3%;
-
     
 }
 
+input:invalid{
+    border: white 1px solid;
+    border-bottom: red 1px solid;
+}
+input:valid{
+    border: white 1px solid;
+}
+
+
 #nom,#prenom{
-    border: white solid 1px;
-    border-bottom: #951D1D solid 1px;
     margin-right: 5px;
     flex: 1;
     flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 
     
 }
 
 #email{
-    border: white solid 1px;
-    border-bottom: #951d1d26 solid 1px;
     margin-right: 7px;
     flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
 
 #role{
     background-color: rgb(192, 189, 189);
     flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .bouton{
@@ -60,6 +70,11 @@ img{
     text-transform: uppercase;
     background-color: rgb(192, 189, 189);
     box-shadow: 0px 1px 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bouton:hover{
+    background-color:  rgb(134, 133, 133);
 }
 
 div{
@@ -68,5 +83,15 @@ div{
     flex: 100%;
     
 }
+
+input:invalid{
+    border-bottom: red 2px solid;
+    caret-color:red;
+
+}
+input:valid{
+    border: white 1px solid;
+}
+
 
 
