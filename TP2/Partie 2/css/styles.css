@@ -1,0 +1,98 @@
+html{
+    background-color: rgb(192, 189, 189);
+    
+    
+}
+
+#boximage{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+
+}
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #951D1D;
+
+}
+
+
+#saisie{
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-shadow: 2px 2px 2px;
+    margin-top: 3%;
+    
+}
+
+input:invalid{
+    border: white 1px solid;
+    border-bottom: red 1px solid;
+}
+input:valid{
+    border: white 1px solid;
+}
+
+
+#nom,#prenom{
+    margin-right: 5px;
+    flex: 1;
+    flex-wrap: wrap;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
+    
+}
+
+#email{
+    margin-right: 7px;
+    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+#role{
+    background-color: rgb(192, 189, 189);
+    flex: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bouton{
+    margin-top: 1%;
+    background-color: white;
+    border: white solid 0px;
+    margin-right: 1%;
+    text-transform: uppercase;
+    background-color: rgb(192, 189, 189);
+    box-shadow: 0px 1px 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bouton:hover{
+    background-color:  rgb(134, 133, 133);
+}
+
+div{
+    display: flex;
+    flex-flow:row wrap;
+    flex: 100%;
+    
+}
+
+input:invalid{
+    border-bottom: red 2px solid;
+    caret-color:red;
+
+}
+input:valid{
+    border: white 1px solid;
+}
+
+
+
