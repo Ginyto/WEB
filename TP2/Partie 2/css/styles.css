@@ -111,3 +111,8 @@ th{
     border: #951D1D solid 1px;
 }
 
+td{
+    border: #951D1D solid 1px;
+    text-align: center;
+}
+

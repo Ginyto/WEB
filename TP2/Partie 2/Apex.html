@@ -39,14 +39,14 @@
                     </select>
                     </div>
                 
-                    <input type="submit" value="Ajouter" class="bouton" onclick="ajouter()">
-                    <input type="submit" value="Tout Supprimer" class="bouton">
+                    <input type="button" value="Ajouter" class="bouton" onclick="ajouter();">
+                    <input type="button" value="Tout Supprimer" class="bouton" onclick="delete_all();">
 
                 </form>
 
-                <span class="tab">
+                <span>
                     
-                    <table>
+                    <table id = "tab">
                         <colgroup id="colonnes">
                 
                             <col name="Nom">
@@ -56,13 +56,21 @@
                 
                         </colgroup>
                 
-                        <tr>
+                        <tr id="titre">
                             <th>Nom</th>
                             <th>Prénom</th>
                             <th>Email</th>
                             <th>Rôles</th>
                         </tr>
-                
+
+                        <div is="copycat">
+
+                            <tr id="end"></tr>
+
+                        </div>
+
+                        
+
                     </table>
 
                 </span>
