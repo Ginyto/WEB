@@ -6,7 +6,8 @@ let role = document.getElementById("role");
 let tableau = document.getElementById("tab");
 //let tbody = document.getElementById("tbody");
 //let ensemble = document.getElementById("ensemble");
-tableau
+
+let saisie = document.getElementById("saisie");
 
 /**
  * Fonction de creation d'éléments
@@ -67,7 +68,6 @@ function isempty(value){
 }
 
 
-
 /**
  * Fonction ajouter
  */
@@ -76,6 +76,7 @@ function ajouter(){
         if (isempty(prenom) == true) {
             if (isempty(email) == true) {
                 addline();
+                saisie.style.animationDirection;
 
             }
             else{
