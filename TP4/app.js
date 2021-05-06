@@ -7,6 +7,8 @@ var boutton_add = document.getElementById("submit");
 
 class Xelor {
     rolex = 0;
+    gelure = 0;
+    fletrissement = 0;
     aiguille = true;
 }
 
@@ -85,11 +87,18 @@ function ShowTasks(){
     tachtab.hidden = false;
 }
 
-function getTasks(){
+function getTasks(start,stop){
     fetch('https://jsonplaceholder.typicode.com/todos')
     .then(response => response.json())
-    .then(function (data) {
-    console.log('data', data)})
+    .then(data => {
+
+        if (stop >= 0 && stop < data.length) {
+            for (let index = start; index < stop; index++){
+            createTask(data[index].userId,data[index].id,data[index].title, data[index].completed)
+            }
+        }
+                }
+    )
 }
 
 function createTask(userID, id, titre, completed){
@@ -112,11 +121,21 @@ function createTask(userID, id, titre, completed){
     table.appendChild(newItem)
 }
 
-getTasks();//le nombre de tache
+function paginertoutça(frappe){
+    removeAll();
+    if (frappe == -10) {
+        console.log("oui")
+        chrono.fletrissement += 2*frappe
+    }
+    chrono.gelure += frappe;
+    console.log(chrono.gelure)
+    console.log(chrono.fletrissement)
+    getTasks(chrono.fletrissement, chrono.gelure);//le nombre de tache
+    chrono.fletrissement = chrono.gelure;
+   
+}
 
 
-ShowTasks();
-createTask("faire", "de", "la", "rando")
 
 function tempo(){
     chrono.rolex += 1;
@@ -132,8 +151,12 @@ function tempo(){
         boutton_add.setAttribute("style", "background-color:#f5f5f5");
         boutton_add.innerHTML = "Ajouter";
     }
+
     
 }
+ShowTasks();
+paginertoutça(10);
+
 
 setInterval(tempo,1000);
 
