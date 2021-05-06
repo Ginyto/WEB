@@ -17,8 +17,8 @@
       </span>
     </div>
     <nav class="menu">
-      <button type="submit" id = "utilisateurs" class="btn">Utilisateurs</button>
-      <button type="submit" id = "taches" class="btn">Tâches</button>
+      <button type="submit" id = "utilisateurs" class="btn" onclick="ShowUsers()">Utilisateurs</button>
+      <button type="submit" id = "taches" class="btn" onclick="ShowTasks()">Tâches</button>
     </nav>
       <form name="newUser" action="" class="box" id="new-user" onsubmit="return false">
       <div class="container">
@@ -39,8 +39,8 @@
 
 
   <main>
-    <div class="box">
-      <table class="datatable">
+    <div class="box" id="utilitab">
+      <table class="datatable" id="tabutili" >
         <caption class="Titretab">Utilisateur</caption>
         <thead>
           <tr>
@@ -55,8 +55,8 @@
       </table>
     </div>
 
-    <div class="box">
-      <table class="datatable">
+    <div class="box" id="tachtab">
+      <table class="datatable" id="tabtache" >
         <Caption class="Titretab">Tâches</Caption>
         <thead>
           <tr>
