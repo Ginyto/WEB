@@ -73,7 +73,7 @@ function main(){
 
     if (chrono.rolex < 10) {
         chrono.aiguille = false;
-        boutton_add.setAttribute("style", "background-color:red");
+        boutton_add.setAttribute("style", "background-color:#951D1D");
         boutton_add.innerHTML = 10-chrono.rolex + " sec";
     }
     else{

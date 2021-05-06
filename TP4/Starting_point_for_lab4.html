@@ -4,15 +4,23 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Point de départ pour TP4</title>
-    <link rel="stylesheet" href="/TP4/style.css">
+    <link rel="stylesheet" href="/TP4/Css/style.css">
     
 
 </head>
 
 <body>
   <header>
-    <div id="logo"></div>
-    <form name="newUser" action="" class="box" id="new-user" onsubmit="return false">
+    <div id="logo">
+      <span id="boximage">
+        <img src="/TP4/images/apexlogo.png" alt="">
+      </span>
+    </div>
+    <nav class="menu">
+      <button type="submit" id = "utilisateurs" class="btn">Utilisateurs</button>
+      <button type="submit" id = "taches" class="btn">Tâches</button>
+    </nav>
+      <form name="newUser" action="" class="box" id="new-user" onsubmit="return false">
       <div class="container">
         <input type="text" name="firstname" placeholder="Prénom" required="">
         <input type="text" name="lastname" placeholder="Nom" required="">
@@ -33,6 +41,7 @@
   <main>
     <div class="box">
       <table class="datatable">
+        <caption class="Titretab">Utilisateur</caption>
         <thead>
           <tr>
             <th>Prénom</th>
@@ -45,7 +54,25 @@
         </tbody>
       </table>
     </div>
+
+    <div class="box">
+      <table class="datatable">
+        <Caption class="Titretab">Tâches</Caption>
+        <thead>
+          <tr>
+            <th>USER ID</th>
+            <th>ID</th>
+            <th>TITRE</th>
+            <th>TERMINÉ</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
   </main>
+
+  
 
   <script src="/TP4/app.js"></script>
 
